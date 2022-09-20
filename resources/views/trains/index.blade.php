@@ -24,15 +24,17 @@
   <tr>
     <td>{{ $train->ID }}</td>
     <td>{{ $train->Azienda}}</td>
-    <td>{{ $train->Stazione di partenza}}</td>
-    <td>{{ $train->Stazione di arrivo}}</td>
-    <td>{{ $train->Orario di partenza}}</td>
-    <td>{{ $train->Orario di arrivo}}</td>
-    <td>{{ $train->Codice Treno}}</td>
-    <td>{{ $train->Numero Carrozze}}</td>
-    <td>{{ $train->In orario}}</td>
+    <td>{{ $train->Stazione_di_partenza}}</td>
+    <td>{{ $train->Stazione_di_arrivo}}</td>
+    <td>{{ $train->Orario_di_partenza}}</td>
+    <td>{{ $train->Orario_di_arrivo}}</td>
+    <td>{{ $train->Codice_Treno}}</td>
+    <td>{{ $train->Numero_Carrozze}}</td>
+    <td>{{ $train->In_orario}}</td>
     <td>{{ $train->Cancellato}}</td>
   </tr>
-
+  @endforeach
+  
+</table>
 
 @endsection

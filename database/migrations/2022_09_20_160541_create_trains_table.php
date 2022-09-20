@@ -14,6 +14,9 @@ class CreateTrainsTable extends Migration
     public function up()
     {
         Schema::create('trains', function (Blueprint $table) {
+
+        
+
             $table->id();
             $table->string('Azienda', 20);
             $table->string('Stazione_di_partenza', 20);
