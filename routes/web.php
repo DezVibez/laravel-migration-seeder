@@ -13,11 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'PageController@index')->name('home');
 
-Route::get('/treni', function () {
-    return view('treni');
-})->name('treni');
+Route::get('/treni', 'PageController@treni')->name('treni');
 

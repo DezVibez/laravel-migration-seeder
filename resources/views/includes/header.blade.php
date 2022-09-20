@@ -8,10 +8,4 @@
   <li class="nav-item">
     <a class="nav-link @if (Route::is('treni')) active @endif"  href="{{ route('treni') }}">Treni</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled">Disabled</a>
-  </li>
 </ul>
