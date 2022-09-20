@@ -6,7 +6,7 @@
 
 @section('content')
 <h1>
-    Home
+    Treni
 </h1>
 @endsection
 
