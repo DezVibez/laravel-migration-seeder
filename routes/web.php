@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PageController@index')->name('home');
-
 Route::get('/treni', 'PageController@treni')->name('treni');
+
+Route::get('/trenidb', 'TrainController@index')->name('trenidb.index');
 

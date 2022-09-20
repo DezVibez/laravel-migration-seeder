@@ -2,6 +2,10 @@
 
 
 @section('content')
+
+<h1>Treni Passati dal Controller</h1>
+
+
 <table>
   <tr>
     <th>ID</th>
