@@ -15,43 +15,22 @@
     <th>In orario</th>
     <th>Cancellato</th>
   </tr>
+
+  @foreach ($trains as $train)
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-  </tr>
-  <tr>
-  <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-  </tr>
-  <tr>
-  <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
+    <td>{{ $train['ID']}}</td>
+    <td>{{ $train['Azienda']}}</td>
+    <td>{{ $train['Stazione di partenza']}}</td>
+    <td>{{ $train['Stazione di arrivo']}}</td>
+    <td>{{ $train['Orario di partenza']}}</td>
+    <td>{{ $train['Orario di arrivo']}}</td>
+    <td>{{ $train['Codice Treno']}}</td>
+    <td>{{ $train['Numero Carrozze']}}</td>
+    <td>{{ $train['In orario']}}</td>
+    <td>{{ $train['Cancellato']}}</td>
   </tr>
   
+  @endforeach
 </table>
 @endsection
 
